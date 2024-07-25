@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stuti Jain Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Stuti Jain</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#achievement-section" class="nav-link"><span>Achievements</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/na.jpeg);">
+	          	 
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 >I'm <span>Stuti Jain</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<!-- <span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'YouTuber  ',
+						'Teacher   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+                          
+						<br>
+					-->
+						
+			            <h2>Software Developer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+						 <br>
+			            <p><a href="https://www.linkedin.com/in/stuti-jain-7068891a6/" class="btn btn-white btn-outline-white py-3 px-4">Linkedin</a> 
+							<a href="https://github.com/stutijain101" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/1twOAfLWMvDs4M3fztd7LPa2wkrExmoQ1/view?usp=drivesdk" class="btn btn-primary py-3 px-4">Download CV</a>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/photo 1 copy.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Stuti Jain</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Software Developer</span></p>
+										<p><span class="title-s">Experience: </span> <span>Fresher</span></p>
+										<p><span class="title-s">Address: </span> <span>Ajmer, Rajasthan</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<hr>
+									<b>Technical Skills</b><br>
+									<span><b><u> Languages</u></b></span> <p>Java, C, C++, HTML, CSS, JavaScript, PHP, SQL, XML, C#, Python(beginner) </p>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span><u><b>Frameworks</b></u></span> <p>ASP.NET Core, Spring Boot, React, Angular </p>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span><u><b>Databases</b></u></span> <p>MYSQL, PostgreSql, Oracle, MongoDB</p>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span><u><b>Others</b></u></span> <p>Operating System, OOPS Concept, DBMS, Data Structures, Cyber Security </p>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>  I'm a dedicated <b>MCA</b> graduate with a strong foundation in <b>software development</b>  
+									and a <b>gold medalist</b> in my bachelor's program.
+									My academic excellence is complemented by hands-on experience, 
+									having completed <b>3</b> impactful <b>internships</b>. 
+									I've had the opportunity to work on several high-impact <b>projects</b>, 
+									showcasing my ability to solve complex problems and deliver innovative solutions. 
+									I'm always eager to learn, grow, and tackle new challenges in the tech world. 
+									Let's connect and explore exciting opportunities together!</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Software Developer </span></li>
+			
+									<li class="d-flex"><span>Education:</span> <span>BCA & MCA</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+			
+									<li class="d-flex"><span>Other Skills:</span> <span> Public Speaking, Creative Writing, RJing &amp; Anchoring</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Watching Movies, Reading</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="7">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/stuti-jain-7068891a6/" class="btn btn-primary py-3 px-3">LinkedIn</a>        <a href="https://github.com/stutijain101/" class="btn btn-primary py-3 px-3">GITHUB</a></p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>A dedicated software developer recognized for academic excellence, 
+				having graduated with top honors in my Bachelor's & Master's degree. 
+				Proven expertise in web development, Artificial intelligence, machine learning algorithms, 
+				Cybersecurity and project management.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">June'24-July'24</span>
+						<h2>Web Developer - intern</h2>
+						<span class="position">Brainwave Matrix Solutions</span><br>
+						<a href="https://drive.google.com/file/d/1sQX93aDdAf_MfnOm9sjrAfcHIMTacJDM/view?usp=drivesdk">Certificate</a>
+						<p class="mt-4">Brainwave Matrix Solutions, a dynamic and innovative technology company committed to transforming businesses through cutting-edge IT solutions. 
+							<ul>
+								<li>Completed four small-scale web development projects.</li>
+								<li>Used HTML, CSS, JS, MYSQL & PHP to develop these responsive websites.</li>
+							</ul>	
+						</p>
+					</div>
+
+				</div>
+
+				<div class="">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jan'24-June'24</span>
+						<h2>Project Intern</h2>
+						<span class="position">Centre for Development of Advanced Computing (C-DAC), Delhi</span>
+						<br>
+						<a href="https://drive.google.com/file/d/1sT3wBQtxJvj5HyBsuY0yWXkcS-8_p3Wr/view?usp=drivesdk">Certificate</a>
+						<p class="mt-4"> Centre at Delhi was established in 1989 as a Project Cell for R&D 
+							in the area of Digital Signal Processing (DSP).
+							Focus areas of the Delhi Centre are Cyber Security, Education and Training, 
+							e-Governance Solutions, Neuro-Cognitive AI and Software Technology.</p>
+							<ul>
+								<li>Developed a full-stack <b>food delivery web application - </b><b>RASOI-GHAR</b> for the faculty members of Banasthali Vidyapith</li>
+								<li>All the canteens of Banasthali Vidyapith can now be clubbed under one single website - RASOI GHAR and our faculty members can place orders 
+									from their favorite canteens with just a few clicks, right from their quarters!</li>
+								<li>Built with features including: seamless order processing from favorite canteens, 
+									tracking order status, receiving events updates and much more</li>
+								<li>Developed using React Js, Spring Boot, MySQL etc. </li>
+								<li>Resulted in 30% increase in order placement.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+
+				<div class="">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May'20- Apr'22</span>
+						<h2>Content Writer Intern </h2>
+						<span class="position">Internshala - Educator Avinash</span>
+						<br>
+						<a href="https://drive.google.com/file/d/1W--v4EqoshEAHCO3PD88QfgoHbY2Rvfp/view?usp=drivesdk">Certificate</a>
+						
+							<ul>
+								<li> Wrote 150+ articles on various repeaters, routers and different kinds of computer science concepts. </li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-2024</span>
+    					<h2>Master of Computer Applications - MCA</h2>
+    					<span class="position">BANASTHALI VIDYAPITH, Raj.</span>
+    					<p class="mt-4">Grade: 9.15 CGPA</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2019-2022</span>
+    					<h2>Bachelor's in Computer Applications - BCA</h2>
+    					<span class="position">BANASTHALI VIDYAPITH, Raj.</span>
+    					<p class="mt-4">Grade: 9.66 CGPA    - <b>Gold Medalist</b> </p>
+					
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2019</span>
+    					<h2>XII (Commerce with IP)</h2>
+    					<span class="position">MAHARAJA SUMER SINGH PUBLIC SCHOOL, Kishangarh</span>
+    					<p class="mt-4">Grade: 95%</p>
+					
+    				</div>
+				</div>
+
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2016-2017</span>
+    					<h2> Class X </h2>
+    					<span class="position">MAHARAJA SUMER SINGH PUBLIC SCHOOL, Kishangarh</span>
+    					<p class="mt-4">Grade: 9.2 CGPA</p>
+					
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1twOAfLWMvDs4M3fztd7LPa2wkrExmoQ1/view?usp=drivesdk" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are some projects being developed in this acedemic journey.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/stutijain101/RASOI-GHAR" class="block-20 zoom-effect" style="background-image: url('images/Project1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/stutijain101/RASOI-GHAR">RASOI GHAR - Food Delivery System using React, Spring Boot, SQL</a></h3>
+                <p>Developed a full-stack Food Delivery Web Application for the faculty members of banasthali vidyapith using ReactJS, Spring Boot and MYSQL .</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/stutijain101/SMS-spam-detection" class="block-20 zoom-effect" style="background-image: url('images/project_2.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/stutijain101/SMS-spam-detection">SMS Spam detection using Python </a></h3>
+                <p>Project focuses on building a robust machine learning model to classify SMS messages as either spam or ham (not spam). A machine Learning project developed using python.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/stutijain101/Online-Quiz-System" class="block-20 zoom-effect" style="background-image: url('images/quiz.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/stutijain101/Online-Quiz-System">Online Quiz System using PHP & MYSQL</a></h3>
+                <p>The Online Quiz System, built with PHP and MySQL, enables easy quiz creation, management, and participation through a user-friendly interface.</p>
+              </div>
+            </div>
+          </div>
+
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/stutijain101/Covid-Vaccine-Tracking-System" class="block-20 zoom-effect" style="background-image: url('images/covid.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/stutijain101/Covid-Vaccine-Tracking-System">Covid Vaccine Tracking System using PHP & MYSQL </a></h3>
+			  <p>The Covid Vaccine Tracking System, developed with PHP and MySQL, efficiently manages and tracks vaccination records. It ensures accurate data handling 
+				and easy access to vaccination information.</p>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/stutijain101/Tale-Of-Hungry-Snake" class="block-20 zoom-effect" style="background-image: url('images/snake.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/stutijain101/Tale-Of-Hungry-Snake">Tale of Hungry Snake using HTML, CSS, JavaScript </a></h3>
+			  <p>"The Tale of Hungry Snake" is a modern browser-based rendition of the classic Snake game.  It features an engaging design, sound effects, and score tracking for an immersive experience.</p>
+			</div>
+		  </div>
+		</div>
+
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/stutijain101/Orphanage-Management-System" class="block-20 zoom-effect" style="background-image: url('images/orphan.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/stutijain101/Orphanage-Management-System"> HELPING HANDS - Orphanage Management System using ASP.NET WITH C#, MYSQL SERVER 2008 </a></h3>
+			  <p>The Orphanage Management System, streamlines the administration of orphanage operations. It provides efficient tools for managing records, and daily activities.</p>
+			</div>
+		  </div>
+		</div>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/stutijain101/Task-Tracker" class="block-20 zoom-effect" style="background-image: url('images/task.jpg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/stutijain101/Task-Tracker"> Task Tracker using HTML, CSS, and JavaScript</a></h3>
+			  <p>Task Tracker is a web app using HTML, CSS, and JavaScript for efficient daily task management. It leverages local storage to persist tasks, allowing users to add, edit, delete, and mark tasks as completed.</p>
+			</div>
+		  </div>
+		</div>
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/stutijain101/Landing-page-of-Gym-Website" class="block-20 zoom-effect" style="background-image: url('images/gym.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/stutijain101/Landing-page-of-Gym-Website">FitLife Gym Landing Page using HTML, CSS, JavaScript </a></h3>
+			  <p>The FitLife Gym landing page is designed to attract potential gym members by showcasing the gym's unique features, flexible pricing plans, 
+				and a special limited-time offer.</p>
+			</div>
+		  </div>
+		</div>
+	
+		<div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-left">
+					 <a href="https://github.com/stutijain101" class="btn btn-primary py-3 px-5">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					 <a href="https://www.linkedin.com/in/stuti-jain-7068891a6/" class="btn btn-primary py-3 px-5">LinkedIn</a>
+				</div>
+
+	  </div>
+    </section>
+
+
+	<section class="ftco-section" id="achievement-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Achievements</h1>
+			  <h2 class="mb-4">Achievements</h2>
+			  
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a class="block-20 zoom-effect" style="background-image: url('images/gold.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">Gold Medal in BCA from Mr. Kalraj Mishra, the Governor of Rajasthan </h3>
+					<b>April'23</b>&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/1W16R0HBfldHyGC4D85epRMf5pKRD3Skn/view?usp=drivesdk">Certificate</a>
+					<p>Secured first position in BCA with a <b>9.66 CGPA</b> and received a gold medal from Shree Kalraj Mishra, the Governor of Rajasthan.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="" class="block-20 zoom-effect" style="background-image: url('images/mayukh.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">Discipline Head at MAYUKH</h3>
+				  <b>Mar'23-Apr'23</b>&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/1thfvWi0HiD7iLaUF_8-FjMnUKnBm5Wrr/view?usp=drivesdk">Certificate</a>
+				  <p>Elected as Discipline Head for the annual technical fest, Mayukh, at Banasthali Vidyapith.</p>
+				</div>
+			  </div>
+			</div>
+  
+  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="" class="block-20 zoom-effect" style="background-image: url('images/rj.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">RJ and anchor, Stuti Jain</h3>
+				  <b>June'20</b>&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/1ti9fYYW39qg9NrFMUkhzlnunP1_y7yP8/view?usp=drivesdk">Certificate</a>
+				  <p>Completed a certificate course in radio production from Banasthali Vidyapith and officially certified as an RJ.</p>
+				</div>
+			  </div>
+			</div>
+  
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+			  <a class="block-20 zoom-effect" style="background-image: url('images/ceremony.jpeg');">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+  
+				<h3 class="heading"> Second Position in Opening Ceremony </h3>
+				<b>July'19</b>&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/1tYln-6K9HDBs_rNfhTsLNkO0PXA1yu6x/view?usp=drivesdk">Certificate</a>
+				<p>Participated in the Opening Ceremony at Banasthali Vidyapith and secured second position</p>
+			  </div>
+			</div>
+		  </div>
+  
+		  <div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+			  <a class="block-20 zoom-effect" style="background-image: url('images/rajasthanpatrika.jpeg');">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+  
+				<h3 class="heading"> Featured in "Rajasthan Patrika" </h3>
+				<b>May'19</b>&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/1t_JVdGDHBA8YrQYavvZTg1ZWpjH3rgH4/view?usp=drivesdk">Certificate</a>
+				<p>One of the top scorers in CBSE 12th standard with 95% marks, featured in 'Rajasthan Patrika.</p>
+			  </div>
+			</div>
+		  </div>
+  
+		  <div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+			  <a href="" class="block-20 zoom-effect" style="background-image: url('images/mun.jpeg');">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+  
+				<h3 class="heading">Awarded with hon'able Mention in IMUN from Mr. Navjot Singh Sidhu</h3>
+				<b>Sep'18</b>&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/1VkoqVLj6-dTjokMknFEQmh2RwwixHjVN/view?usp=drivesdk">Certificate</a>
+				<p>Participated as Harsimrat Kaur Badal in All Saints International Model United Nations, Ajmer and was awarded with hon'able mention from Mr. Navjot Singh Sidhu.</p>
+			  </div>
+			</div>
+		  </div>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  <div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+			  <a href="" class="block-20 zoom-effect" style="background-image: url('images/captain.jpeg');">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+  
+				<h3 class="heading"> Elected as a School House Captain, Himalaya House</h3>
+				<b>July'17-May'18</b>
+				<p>Elected as a School House Captain, Himalaya House.<br> (One with the green flag)</p>
+			  </div>
+			</div>
+		  </div>
+		  
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  <div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+			  <a href="" class="block-20 zoom-effect" style="background-image: url('images/bca.jpeg');">
+			  </a>
+			  <div class="text mt-3 float-right d-block">
+  
+				<h3 class="heading">₹10,000 Cash Price in BCA 2nd Year </h3>
+				<b>Feb'22</b>&nbsp;&nbsp;&nbsp;<a href="https://drive.google.com/file/d/1tWiRaOMc3788T62cjhQ1g4I0vocNwwC9/view?usp=drivesdk">Certificate</a>
+				<p>Received a ₹10,000 cash prize for securing first position in BCA second year at Banasthali Vidyapith.</p>
+			  </div>
+			</div>
+		  </div>
+	  
+		</div>
+	  </section>
+
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="8">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="9">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="3">0</strong>
+                <span>Internships</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+	
+	  
+	</section>
+
+	<div class="container">
+		<br>
+		<br>
+		<div class="row justify-content-center">
+			<div class="col-md-7 ftco-animate text-center">
+				 <a href="https://drive.google.com/file/d/1twOAfLWMvDs4M3fztd7LPa2wkrExmoQ1/view?usp=drivesdk" class="btn btn-primary py-3 px-5">Download CV</a>
+			</div>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Ajmer, Rajasthan</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p>+91 7357836395</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:stutijain2705@gmail.com">stutijain2705@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-linkedin"></span>
+          		</div>
+          		<h3 class="mb-4">LinkedIn</h3>
+	            <p><a href="https://www.linkedin.com/in/stuti-jain-7068891a6/">linkedin/stuti-jain</a></p>
+	          </div>
+          </div>
+
+		  
+			
+   </div>
+ </section>
+
+
+ 
+	
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
